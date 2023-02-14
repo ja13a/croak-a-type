@@ -1,0 +1,41 @@
+{
+  "name": "croak-a-type",
+  "version": "0",
+  "main": "src/index.ts",
+  "repository": "https://github.com/ja13a/croak-a-type.git",
+  "author": "<suvorovsergey99@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "webpack-dev-server --config config/webpack.dev.js",
+    "build": "webpack --config config/webpack.prod.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "autoprefixer": "^10.4.13",
+    "babel-loader": "^9.1.2",
+    "bable-loader": "^0.0.1-security",
+    "css-loader": "^6.7.3",
+    "eslint": "^8.34.0",
+    "eslint-config-prettier": "^8.6.0",
+    "html-webpack-plugin": "^5.5.0",
+    "postcss": "^8.4.21",
+    "postcss-loader": "^7.0.2",
+    "prettier": "^2.8.4",
+    "sass": "^1.58.1",
+    "sass-loader": "^13.2.0",
+    "style-loader": "^3.3.1",
+    "stylelint": "^14.5.1",
+    "stylelint-config-prettier": "^9.0.5",
+    "stylelint-config-recommended-scss": "^5.0.2",
+    "stylelint-order": "^6.0.2",
+    "stylelint-webpack-plugin": "^4.0.0",
+    "ts-loader": "^9.4.2",
+    "typescript": "^4.9.5",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "dependencies": {}
+}
