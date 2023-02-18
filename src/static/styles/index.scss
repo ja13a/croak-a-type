@@ -1,14 +1,26 @@
 $bg-color: #111111;
 
-body {
-  background-color: $bg-color;
-}
-
-.game-canvas {
+%centered-absoulte {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   margin: auto;
+}
+
+body {
+  background-color: $bg-color;
+}
+
+.game-canvas {
+  @extend %centered-absoulte;
+}
+
+.gui-container {
+  @extend %centered-absoulte;
+
+  width: 480px;
+  height: 720px;
+  color: white;
 }

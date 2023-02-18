@@ -2,9 +2,13 @@
   "compilerOptions": {
     "outDir": "./docs/",
     "noImplicitAny": true,
+    "removeComments": true,
     "module": "es6",
     "target": "es5",
-    "allowJs": true,
-    "moduleResolution": "node"
+    "allowJs": false,
+    "moduleResolution": "node",
+    "jsx": "react",
+    "jsxFactory": "jsx",
+    "jsxFragmentFactory": "jsx.Fragment"
   }
 }

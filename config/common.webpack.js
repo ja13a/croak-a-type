@@ -7,17 +7,12 @@ module.exports = {
   commonModules: {
     rules: [
       {
-        test: /\.js$/,
-        exclude: '/node_modules',
-        loader: 'babel-loader'
-      },
-      {
         test: /\.tsx?$/,
         use: 'ts-loader',
         exclude: /node_modules/
       },
       {
-        test: /\.(sass|scss|css)$/,
+        test: /\.(scss)$/,
         use: [
           'style-loader',
           'css-loader',
@@ -55,7 +50,7 @@ module.exports = {
   commonPlugins: [
     new HtmlWebpackPlugin({
       template: paths.src + '/index.html',
-      favicon: paths.src + '/media/img/favicon.svg',
+      favicon: paths.src + '/static/img/favicon.svg',
       filename: 'index.html'
     }),
     new StylelintPlugin()
