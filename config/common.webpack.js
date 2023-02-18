@@ -7,17 +7,12 @@ module.exports = {
   commonModules: {
     rules: [
       {
-        test: /\.js$/,
-        exclude: '/node_modules',
-        loader: 'babel-loader'
-      },
-      {
         test: /\.tsx?$/,
         use: 'ts-loader',
         exclude: /node_modules/
       },
       {
-        test: /\.(sass|scss|css)$/,
+        test: /\.(scss)$/,
         use: [
           'style-loader',
           'css-loader',

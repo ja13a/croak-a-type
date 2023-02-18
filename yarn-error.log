@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/bin/node /sbin/yarn add --dev @three/types
+  /usr/bin/node /sbin/yarn add --dev @bable/preset-react babel-preset-primavera babel-plugin-jsx-pragmatic
 
 PATH: 
   /sbin:/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/sbin:/home/zhaba/.local/share/flatpak/exports/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
@@ -8,13 +8,13 @@ Yarn version:
   1.22.19
 
 Node version: 
-  19.6.0
+  19.6.1
 
 Platform: 
   linux x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@three%2ftypes: Not found
+  Error: https://registry.yarnpkg.com/@bable%2fpreset-react: Not found
       at params.callback [as _callback] (/usr/lib/node_modules/yarn/lib/cli.js:66145:18)
       at self.callback (/usr/lib/node_modules/yarn/lib/cli.js:140890:22)
       at Request.emit (node:events:512:28)
@@ -70,7 +70,9 @@ npm manifest:
       "webpack-cli": "^5.0.1",
       "webpack-dev-server": "^4.11.1"
     },
-    "dependencies": {}
+    "dependencies": {
+      "@types/three": "^0.149.0"
+    }
   }
 
 yarn manifest: 
@@ -1307,6 +1309,18 @@ Lockfile:
     integrity sha512-f0KEEe05NvUnat+boPTZ0dgaLZ4SfSouXUgv5noUiefG2ajgKjmETo9ZJyuqsl7dfl2aHlLJUiki6B4ZYldiiw==
     dependencies:
       "@types/node" "*"
+  
+  "@types/three@^0.149.0":
+    version "0.149.0"
+    resolved "https://registry.yarnpkg.com/@types/three/-/three-0.149.0.tgz#f48c03ffcf35b2d196f3532b51bc845e96f6090e"
+    integrity sha512-fgNBm9LWc65ER/W0cvoXdC0iMy7Ke9e2CONmEr6Jt8sDSY3sw4DgOubZfmdZ747dkPhbQrgRQAWwDEr2S/7IEg==
+    dependencies:
+      "@types/webxr" "*"
+  
+  "@types/webxr@*":
+    version "0.5.1"
+    resolved "https://registry.yarnpkg.com/@types/webxr/-/webxr-0.5.1.tgz#4908349419104bd476a4252d04e4c3abb496748d"
+    integrity sha512-xlFXPfgJR5vIuDefhaHuUM9uUgvPaXB6GKdXy2gdEh8gBWQZ2ul24AJz3foUd8NNKlSTQuWYJpCb1/pL81m1KQ==
   
   "@types/ws@^8.5.1":
     version "8.5.4"

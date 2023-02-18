@@ -5,7 +5,7 @@ const { commonModules, commonPlugins, commonResolve } = common;
 
 module.exports = {
   mode: 'development',
-  entry: [paths.src + '/index.ts'],
+  entry: [paths.src + '/main.tsx'],
   output: {
     path: paths.build,
     filename: '[name].bundle.js',
@@ -19,12 +19,10 @@ module.exports = {
     port: 14134
   },
   module: {
-    ...commonModules,
+    ...commonModules
   },
-  plugins: [
-    ...commonPlugins,
-  ],
+  plugins: [...commonPlugins],
   resolve: {
-    ...commonResolve,
+    ...commonResolve
   }
 };
